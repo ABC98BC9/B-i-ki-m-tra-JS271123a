@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style scr="style.css"> </style>
+</head>
+<body>
+    <div action="" border="1" class="bang1">
+        <h1> Thông tin học viên </h1>
+        <label for="a1"> Họ và Tên </label>
+        <input type="text" placeholder="vui lòng nhập tên" id="userName"> <br> <br>
+        <label for="a2"> Email </label>
+        <input type="email" name="" id="email" placeholder="vui lòng nhập email"> <br> <br>
+        <label for="a3"> Số điện thoại </label>
+        <input type="number" id="phone" placeholder="vui lòng nhập số điện thoại"> <br> <br>
+        <label for="a4"> Quê quán </label>
+        <input type="text" id="address" placeholder="vui lòng nhập địa chỉ quê quán"> <br> <br>
+        <label for="a5"> Giới tính </label>
+        <input type="radio" name="gender" value="nam" checked id="gender">
+        <span> Nam </span>
+        <input type="radio" name="gender" value="nữ" >
+        <span> Nữ </span> <br> <br>
+        <button onclick="save()"> Lưu lại </button>
+    </div>
+
+    <h2> Danh sách học viên </h2>
+    <label for="tk"> Tìm kiếm tên học viên: </label>
+    <input type="text" id="tk">
+    <button onclick="search"> Search </button>
+    <table border=1 cellpadding="5px">
+        <thead>
+            <tr>
+                <th> # </th>
+                <th> Họ và tên </th>
+                <th> Email </th>
+                <th> Điện thoại </th>
+                <th> Địa chỉ </th>
+                <th> Gender </th>
+                <th> Hành động </th>
+                <th> <button onclick="arrange()"> Sắp xếp (alpha b) </button> </th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table> 
+</body>
+<script src="myccript.js"></script>
+</html>
